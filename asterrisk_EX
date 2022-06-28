@@ -1,0 +1,17 @@
+# 함수, 딕셔너리 생성, 이름, 딕셔너리 매개변수로 하는 함수
+# 이름:'홍길동',나이: 20, 키: 160, 학과: IT
+# 출력형태: 
+# 000님의
+# 나이 : 00
+# 키는 00이며
+# 학과는 it 학과 입니다. 
+
+def print_kwargs(**kwargs):
+        return kwargs
+b = print_kwargs(name = '홍길동', age = 23, height = 160, major ='IT')
+
+name1 = b['name']
+age1 = b['age']
+height1 = b['height']
+major1 = b['major']
+print(name1,'님의 나이:',age1,'키는',height1,'이며 학과는',major1,'입니다.')
